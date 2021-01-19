@@ -20,8 +20,16 @@ $sql = "SELECT * FROM account WHERE email = '$email' AND password = '$password' 
 $result = mysqli_query($conn,$sql);
 if (!empty($result)) {	
 	if (mysqli_num_rows($result) == 1) {
+		$db = "SELECT username FROM account WHERE email = '$email'";
+		$res =mysqli_query($conn,$sql);
+		$dat = mysqli_fetch_assoc($res);
+		//Get data from database
+		$username = $dat['username'];
+		//$id_manga = $dat['id_manga'];
 		session_start();
 		$_SESSION['email'] = $email;
+		$_SESSION['username'] = $username;
+		//$_SESSION['id_manga'] = $id_manga;
 		header("location: indexlogged.php");
 		exit();
 	}
