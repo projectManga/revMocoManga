@@ -1,8 +1,8 @@
 <?php
 session_start();
-$_SESSION['username']='';
-unset($_SESSION['username']);
+?>
+<?php
+unset();
 session_destroy();
-session_write_close();
 header('Location: login.php');
 ?>
