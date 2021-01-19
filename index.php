@@ -7,7 +7,7 @@
     <meta name="keywords" content="Anime, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>mocoManga | ListManga</title>
+    <title>mocoManga | Home</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -51,8 +51,8 @@
                     <div class="header__nav">
                         <nav class="header__menu mobile-menu">
                             <ul>
-                                <li><a href="./index.html">Beranda</a></li>
-                                <li class="active"><a href="./listmanga.html">List Manga</a></li>
+                                <li class="active"><a href="./index.html">Beranda</a></li>
+                                <li><a href="./listmanga.html">List Manga</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -69,60 +69,187 @@
     </header>
     <!-- Header End -->
 
-    <!-- Breadcrumb Begin -->
-    <div class="breadcrumb-option">
+    <!-- Hero Section Begin -->
+    <section class="hero">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumb__links">
-                        <a href="./index.html"><i class="fa fa-home"></i> Beranda</a>
-                        <span>List Manga</span>
+            <div class="hero__slider owl-carousel">
+                <div class="hero__items set-bg" data-setbg="img/hero/overlord.jpg">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <div class="label">Action</div>
+                                <h2>Overlord</h2>
+                                <p>Pada tahun 2126, Game Dive Massively.....</p>
+                                <a href="overlord_details.html"><span>Baca Sekarang</span> <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__items set-bg" data-setbg="img/hero/solo.jpg">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <div class="label">Action</div>
+                                <h2>Solo Leveling</h2>
+                                <p>10 tahun yang lalu, setelah "Gerbang".....</p>
+                                <a href="sololeveling_details.html"><span>Baca Sekarang</span> <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__items set-bg" data-setbg="img/hero/dr.jpg">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <div class="label">Survival</div>
+                                <h2>Dr. Stone</h2>
+                                <p>3700 tahun setelah kilatan cahaya misterius.....</p>
+                                <a href="drstone_details.html"><span>Baca Sekarang</span> <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Breadcrumb End -->
+    </section>
+    <!-- Hero Section End -->
 
-    <!-- Blog Section Begin -->
-    <section class="blog spad">
+    <!-- Product Section Begin -->
+    <section class="product spad">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    <div class="list">
+                    <div class="trending__product">
                         <div class="row">
-                            <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="col-lg-8 col-md-8 col-sm-8">
                                 <div class="section-title">
-                                    <h4>D</h4>
+                                    <h4>Project Komik Terbaru</h4>
                                 </div>
-                                <ul>
-                                    <li><a href="drstone_details.html">Dr. Stone</a></li>
-                                </ul>
-                                <br>
                             </div>
-                            <div class="col-lg-6 col-md-12 col-sm-12">
-                                <div class="section-title">
-                                    <h4>S</h4>
-                                </div>
-                                <ul>
-                                    <li><a href="sololeveling_details.html">Solo Leveling</a></li>
-                                </ul>
-                                <br>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-6 col-md-12 col-sm-12">
-                                <div class="section-title">
-                                    <h4>O</h4>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="btn__all">
+                                    <a href="#" class="primary-btn">Lihat Semua <span class="arrow_right"></span></a>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-6">
-                                <ul>
-                                    <li><a href="overlord_details.html">Overlord</a></li>
-                                </ul>
-                                <br>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/overlord.jpg">
+                                        <div class="ep">18 / 18</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Magic</li>
+                                            <li>Manga</li>
+                                        </ul>
+                                        <h5><a href="overlord_details.html">Overlord</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/dr-stone.jpg">
+                                        <div class="ep">18 / 18</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Survival</li>
+                                            <li>Science</li>
+                                            <li>Manga</li>
+                                        </ul>
+                                        <h5><a href="drstone_details.html">Dr. Stone</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/sololeveling.png">
+                                        <div class="ep">18 / 18</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Magic</li>
+                                            <li>Manhwa</li>
+                                        </ul>
+                                        <h5><a href="sololeveling_details.html">Solo Leveling</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-8 col-md-8 col-sm-8">
+                                <div class="section-title">
+                                    <h4>Update Chapter Terbaru</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="btn__all">
+                                    <a href="#" class="primary-btn">Lihat Semua <span class="arrow_right"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/overlord.jpg">
+                                        <div class="ep">18 / 18</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Magic</li>
+                                            <li>Manga</li>
+                                        </ul>
+                                        <h5><a href="overlord_details.html">Overlord</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/dr-stone.jpg">
+                                        <div class="ep">18 / 18</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Survival</li>
+                                            <li>Science</li>
+                                            <li>Manga</li>
+                                        </ul>
+                                        <h5><a href="drstone_details.html">Dr. Stone</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/sololeveling.png">
+                                        <div class="ep">18 / 18</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Magic</li>
+                                            <li>Manhwa</li>
+                                        </ul>
+                                        <h5><a href="sololeveling_details.html">Solo Leveling</a></h5>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -218,7 +345,7 @@
             </div>
         </div>
     </section>
-    <!-- Blog Section End -->
+    <!-- Product Section End -->
 
     <!-- Footer Section Begin -->
     <footer class="footer">
@@ -265,6 +392,7 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+
 
 </body>
 
