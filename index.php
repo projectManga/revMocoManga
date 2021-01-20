@@ -62,10 +62,10 @@
                         <nav class="header__menu mobile-menu">
                             <ul>
                                 <li><a href="#" class="search-switch"><span class="icon_search"></span></a></li>
-                                <li><a href="./login.html"><span class="icon_profile arrow_carrot-down"></span></a>
+                                <li><a href="#"><span class="icon_profile arrow_carrot-down"></span></a>
                                     <ul class="dropdown">
                                         <li><a href="./categories.html">Mylist</a></li>
-                                        <li><a href="./anime-details.html">Logout</a></li>
+                                        <?php include 'log_bottom.php'; ?>
                                     </ul>
                                 </li>
                             </ul>
