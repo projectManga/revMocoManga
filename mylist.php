@@ -7,7 +7,7 @@
     <meta name="keywords" content="Anime, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>mocoManga | Login</title>
+    <title>mocoManga | ListManga</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -51,8 +51,8 @@
                     <div class="header__nav">
                         <nav class="header__menu mobile-menu">
                             <ul>
-                                <li class="active"><a href="./index.php">Beranda</a></li>
-                                <li><a href="./listmanga.html">List Manga</a></li>
+                                <li><a href="./index.php">Beranda</a></li>
+                                <li class="active"><a href="./listmanga.html">List Manga</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -78,68 +78,71 @@
     </header>
     <!-- Header End -->
 
-    <!-- Normal Breadcrumb Begin -->
-    <section class="normal-breadcrumb set-bg" data-setbg="img/normal-breadcrumb.jpg">
+    <!-- Breadcrumb Begin -->
+    <div class="breadcrumb-option">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="normal__breadcrumb__text">
-                        <h2>Login</h2>
-                        <p>Welcome to the official mocoManga.</p>
+                <div class="col-lg-12">
+                    <div class="breadcrumb__links">
+                        <a href="./index.php"><i class="fa fa-home"></i> Beranda</a>
+                        <span>List Manga</span>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Normal Breadcrumb End -->
+    </div>
+    <!-- Breadcrumb End -->
 
-    <!-- Login Section Begin -->
-    <section class="login spad">
+    <!-- Blog Section Begin -->
+    <section class="product spad">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="login__form">
-                        <h3>Login</h3>
-                        <form action="koneksiDB.php" method="POST">
-                            <div class="input__item">
-                                <input type="text" name="email" id="email" placeholder="Email address">
-                                <span class="icon_mail"></span>
+            <div class="row" align="center">
+                <div class="col-lg-12">
+                    <div class="trending__product">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="section-title">
+                                    <h4>My List</h4>
+                                </div>
                             </div>
-                            <div class="input__item">
-                                <input type="text" name="pass" id="pass" placeholder="Password">
-                                <span class="icon_lock"></span>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-2 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/overlord.jpg"></div>
+                                    <div class="product__item__text">
+                                        <h5><a href="overlord_details.html">Overlord</a></h5>
+                                    </div>
+                                </div>
                             </div>
-                            <button type="submit" class="site-btn">Login</button>
-                        </form>
-                        <a href="#" class="forget_pass">Lupa Password?</a>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="login__register">
-                        <h3>Tidak Punya Akun?</h3>
-                        <a href="signup.php" class="primary-btn">Daftar Sekarang</a>
-                    </div>
-                </div>
-            </div>
-            <div class="login__social">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="login__social__links">
-                            <span>or</span>
-                            <ul>
-                                <li><a href="#" class="facebook"><i class="fa fa-facebook"></i> Sign in With
-                                Facebook</a></li>
-                                <li><a href="#" class="google"><i class="fa fa-google"></i> Sign in With Google</a></li>
-                                <li><a href="#" class="twitter"><i class="fa fa-twitter"></i> Sign in With Twitter</a>
-                                </li>
-                            </ul>
+                            <div class="col-lg-2 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/dr-stone.jpg"></div>
+                                    <div class="product__item__text">
+                                        <h5><a href="drstone_details.html">Dr. Stone</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/sololeveling.png"></div>
+                                    <div class="product__item__text">
+                                        <h5><a href="sololeveling_details.html">Solo Leveling</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" align="right">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <button type="submit" class="site-btn">Next</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Login Section End -->
+    <!-- Blog Section End -->
 
     <!-- Footer Section Begin -->
     <footer class="footer">
@@ -186,7 +189,6 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
-
 
 </body>
 

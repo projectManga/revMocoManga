@@ -57,7 +57,7 @@ if (!isset($_SESSION['email'])) {
                     <div class="header__nav">
                         <nav class="header__menu mobile-menu">
                             <ul>
-                                <li class="active"><a href="./index.html">Beranda</a></li>
+                                <li class="active"><a href="./index.php">Beranda</a></li>
                                 <li><a href="./listmanga.html">List Manga</a></li>
                             </ul>
                         </nav>
@@ -66,8 +66,8 @@ if (!isset($_SESSION['email'])) {
                 <div class="col-lg-2">
                     <div class="header__right">
                         <a href="#" class="search-swith"><span class="icon_search"></span></a>
-                        <a href="./login.php"><span class="icon_profile"></span></a>
-                        <a href="./pslogot.php"><span>Logout</span></a>
+                        <a href="./login.html"><span class="icon_profile"></span></a>
+                        <a href="pslogot.php>"><span>Logout</span></a>
                     </div>
                 </div>
             </div>

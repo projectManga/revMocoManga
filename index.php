@@ -42,7 +42,7 @@
             <div class="row">
                 <div class="col-lg-2">
                     <div class="header__logo">
-                        <a href="./index.html">
+                        <a href="./index.php">
                             <img src="img/logo1.png" />
                         </a>
                     </div>
@@ -51,16 +51,25 @@
                     <div class="header__nav">
                         <nav class="header__menu mobile-menu">
                             <ul>
-                                <li class="active"><a href="./index.html">Beranda</a></li>
+                                <li class="active"><a href="./index.php">Beranda</a></li>
                                 <li><a href="./listmanga.html">List Manga</a></li>
                             </ul>
                         </nav>
                     </div>
                 </div>
                 <div class="col-lg-2">
-                    <div class="header__right">
-                        <a href="#" class="search-swith"><span class="icon_search"></span></a>
-                        <a href="./login.html"><span class="icon_profile"></span></a>
+                    <div class="header__nav">
+                        <nav class="header__menu mobile-menu">
+                            <ul>
+                                <li><a href="#" class="search-switch"><span class="icon_search"></span></a></li>
+                                <li><a href="./login.html"><span class="icon_profile arrow_carrot-down"></span></a>
+                                    <ul class="dropdown">
+                                        <li><a href="./categories.html">Mylist</a></li>
+                                        <li><a href="./anime-details.html">Logout</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -356,7 +365,7 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="footer__logo">
-                        <a href="./index.html"><img src="img/logo1.png" alt=""></a>
+                        <a href="./index.php"><img src="img/logo1.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-6">
