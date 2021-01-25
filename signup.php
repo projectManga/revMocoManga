@@ -100,7 +100,7 @@
                 <div class="col-lg-6">
                     <div class="login__form">
                         <h3>Sign Up</h3>
-                        <form action="ee.php" method="POST">
+                        <form action="signuproses.php" method="POST">
                             <div class="input__item">
                                 <input type="text" name="email" id="email" placeholder="Email address" required>
                                 <span class="icon_mail"></span>
