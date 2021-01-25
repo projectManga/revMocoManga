@@ -52,7 +52,7 @@
                         <nav class="header__menu mobile-menu">
                             <ul>
                                 <li class="active"><a href="./index.php">Beranda</a></li>
-                                <li><a href="./listmanga.html">List Manga</a></li>
+                                <li><a href="view/listmanga.php">List Manga</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -64,8 +64,8 @@
                                 <li><a href="#" class="search-switch"><span class="icon_search"></span></a></li>
                                 <li><a href="#"><span class="icon_profile arrow_carrot-down"></span></a>
                                     <ul class="dropdown">
-                                        <li><a href="./mylist.php">Mylist</a></li>
-                                        <?php include 'log_bottom.php'; ?>
+                                        <li><a href="view/mylist.php">Mylist</a></li>
+                                        <?php include 'proses/log_bottom.php'; ?>
                                     </ul>
                                 </li>
                             </ul>
@@ -89,7 +89,7 @@
                                 <div class="label">Action</div>
                                 <h2>Overlord</h2>
                                 <p>Pada tahun 2126, Game Dive Massively.....</p>
-                                <a href="overlord_details.html"><span>Baca Sekarang</span> <i class="fa fa-angle-right"></i></a>
+                                <a href="view/overlord_details.php"><span>Baca Sekarang</span> <i class="fa fa-angle-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -101,7 +101,7 @@
                                 <div class="label">Action</div>
                                 <h2>Solo Leveling</h2>
                                 <p>10 tahun yang lalu, setelah "Gerbang".....</p>
-                                <a href="sololeveling_details.html"><span>Baca Sekarang</span> <i class="fa fa-angle-right"></i></a>
+                                <a href="view/sololeveling_details.php"><span>Baca Sekarang</span> <i class="fa fa-angle-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -113,7 +113,7 @@
                                 <div class="label">Survival</div>
                                 <h2>Dr. Stone</h2>
                                 <p>3700 tahun setelah kilatan cahaya misterius.....</p>
-                                <a href="drstone_details.html"><span>Baca Sekarang</span> <i class="fa fa-angle-right"></i></a>
+                                <a href="view/drstone_details.php"><span>Baca Sekarang</span> <i class="fa fa-angle-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -145,9 +145,6 @@
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
                                     <div class="product__item__pic set-bg" data-setbg="img/overlord.jpg">
-                                        <div class="ep">18 / 18</div>
-                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
-                                        <div class="view"><i class="fa fa-eye"></i> 9141</div>
                                     </div>
                                     <div class="product__item__text">
                                         <ul>
@@ -155,16 +152,13 @@
                                             <li>Magic</li>
                                             <li>Manga</li>
                                         </ul>
-                                        <h5><a href="overlord_details.html">Overlord</a></h5>
+                                        <h5><a href="view/overlord_details.php">Overlord</a></h5>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
                                     <div class="product__item__pic set-bg" data-setbg="img/dr-stone.jpg">
-                                        <div class="ep">18 / 18</div>
-                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
-                                        <div class="view"><i class="fa fa-eye"></i> 9141</div>
                                     </div>
                                     <div class="product__item__text">
                                         <ul>
@@ -173,16 +167,13 @@
                                             <li>Science</li>
                                             <li>Manga</li>
                                         </ul>
-                                        <h5><a href="drstone_details.html">Dr. Stone</a></h5>
+                                        <h5><a href="view/drstone_details.php">Dr. Stone</a></h5>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
                                     <div class="product__item__pic set-bg" data-setbg="img/sololeveling.png">
-                                        <div class="ep">18 / 18</div>
-                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
-                                        <div class="view"><i class="fa fa-eye"></i> 9141</div>
                                     </div>
                                     <div class="product__item__text">
                                         <ul>
@@ -190,7 +181,7 @@
                                             <li>Magic</li>
                                             <li>Manhwa</li>
                                         </ul>
-                                        <h5><a href="sololeveling_details.html">Solo Leveling</a></h5>
+                                        <h5><a href="view/sololeveling_details.php">Solo Leveling</a></h5>
                                     </div>
                                 </div>
                             </div>
@@ -211,9 +202,6 @@
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
                                     <div class="product__item__pic set-bg" data-setbg="img/overlord.jpg">
-                                        <div class="ep">18 / 18</div>
-                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
-                                        <div class="view"><i class="fa fa-eye"></i> 9141</div>
                                     </div>
                                     <div class="product__item__text">
                                         <ul>
@@ -221,16 +209,13 @@
                                             <li>Magic</li>
                                             <li>Manga</li>
                                         </ul>
-                                        <h5><a href="overlord_details.html">Overlord</a></h5>
+                                        <h5><a href="view/overlord_details.php">Overlord</a></h5>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
                                     <div class="product__item__pic set-bg" data-setbg="img/dr-stone.jpg">
-                                        <div class="ep">18 / 18</div>
-                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
-                                        <div class="view"><i class="fa fa-eye"></i> 9141</div>
                                     </div>
                                     <div class="product__item__text">
                                         <ul>
@@ -239,16 +224,13 @@
                                             <li>Science</li>
                                             <li>Manga</li>
                                         </ul>
-                                        <h5><a href="drstone_details.html">Dr. Stone</a></h5>
+                                        <h5><a href="view/drstone_details.php">Dr. Stone</a></h5>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
                                     <div class="product__item__pic set-bg" data-setbg="img/sololeveling.png">
-                                        <div class="ep">18 / 18</div>
-                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
-                                        <div class="view"><i class="fa fa-eye"></i> 9141</div>
                                     </div>
                                     <div class="product__item__text">
                                         <ul>
@@ -256,7 +238,7 @@
                                             <li>Magic</li>
                                             <li>Manhwa</li>
                                         </ul>
-                                        <h5><a href="sololeveling_details.html">Solo Leveling</a></h5>
+                                        <h5><a href="view/sololeveling_details.php">Solo Leveling</a></h5>
                                     </div>
                                 </div>
                             </div>
@@ -285,8 +267,7 @@
                                             <li>Magic</li>
                                             <li>Manhwa</li>
                                         </ul>
-                                        <h5><a href="sololeveling_details.html">Solo Leveling</a></h5>
-                                        <span><i class="fa fa-eye"></i> 19.141 Viewes</span>
+                                        <h5><a href="view/sololeveling_details.php">Solo Leveling</a></h5>
                                     </div>
                                 </div>
                                 <div class="product__sidebar__comment__item mix day week">
@@ -300,8 +281,7 @@
                                             <li>Science</li>
                                             <li>Manga</li>
                                         </ul>
-                                        <h5><a href="drstone_details.html">Dr. Stone</a></h5>
-                                        <span><i class="fa fa-eye"></i> 19.141 Viewes</span>
+                                        <h5><a href="view/drstone_details.php">Dr. Stone</a></h5>
                                     </div>
                                 </div>
                                 <div class="product__sidebar__comment__item mix day">
@@ -314,8 +294,7 @@
                                             <li>Magic</li>
                                             <li>Manga</li>
                                         </ul>
-                                        <h5><a href="overlord_details.html">Overlord</a></h5>
-                                        <span><i class="fa fa-eye"></i> 19.141 Viewes</span>
+                                        <h5><a href="view/overlord_details.php">Overlord</a></h5>
                                     </div>
                                 </div>
                             </div>
