@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 19, 2021 at 11:37 AM
--- Server version: 10.4.17-MariaDB
--- PHP Version: 8.0.0
+-- Waktu pembuatan: 25 Jan 2021 pada 08.19
+-- Versi server: 10.4.17-MariaDB
+-- Versi PHP: 8.0.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,48 +24,58 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `account`
+-- Struktur dari tabel `account`
 --
 
 CREATE TABLE `account` (
   `email` varchar(100) NOT NULL,
   `username` varchar(100) NOT NULL,
-  `password` varchar(100) NOT NULL,
-  `id_manga` varchar(20) NOT NULL
+  `password` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `account`
+-- Dumping data untuk tabel `account`
 --
 
-INSERT INTO `account` (`email`, `username`, `password`, `id_manga`) VALUES
-('kirby@gmail.com', 'ilham', '123', ''),
-('mochammadilham.afriandhi@gmail.com', 'ile', '123', ''),
-('sdfdsf', 'ddgfd', '334', ''),
-('wsgg', 'wrchjo', '1234', '');
+INSERT INTO `account` (`email`, `username`, `password`) VALUES
+('kirby@gmail.com', 'ilham', '123'),
+('mochammadilham.afriandhi@gmail.com', 'ile', '123'),
+('sdfdsf', 'ddgfd', '334'),
+('wsgg', 'wrchjo', '1234');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `genre`
+-- Struktur dari tabel `genre`
 --
 
 CREATE TABLE `genre` (
   `id_genre` varchar(20) NOT NULL,
+  `id_manga` varchar(100) NOT NULL,
   `nama_genre` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `manga`
+-- Struktur dari tabel `manga`
 --
 
 CREATE TABLE `manga` (
   `id_manga` varchar(20) NOT NULL,
-  `id_genre` varchar(20) NOT NULL,
   `judul` varchar(100) NOT NULL,
   `cover` mediumblob NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `mylist`
+--
+
+CREATE TABLE `mylist` (
+  `email` varchar(100) NOT NULL,
+  `id_manga` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -73,33 +83,47 @@ CREATE TABLE `manga` (
 --
 
 --
--- Indexes for table `account`
+-- Indeks untuk tabel `account`
 --
 ALTER TABLE `account`
   ADD PRIMARY KEY (`email`);
 
 --
--- Indexes for table `genre`
+-- Indeks untuk tabel `genre`
 --
 ALTER TABLE `genre`
-  ADD PRIMARY KEY (`id_genre`);
+  ADD PRIMARY KEY (`id_genre`),
+  ADD KEY `FK_MANGA` (`id_manga`);
 
 --
--- Indexes for table `manga`
+-- Indeks untuk tabel `manga`
 --
 ALTER TABLE `manga`
-  ADD PRIMARY KEY (`id_manga`),
-  ADD KEY `fk_genre` (`id_genre`);
+  ADD PRIMARY KEY (`id_manga`);
 
 --
--- Constraints for dumped tables
+-- Indeks untuk tabel `mylist`
+--
+ALTER TABLE `mylist`
+  ADD KEY `FK_EMAIL` (`email`),
+  ADD KEY `FK_MANGALIS` (`id_manga`);
+
+--
+-- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
 --
 
 --
--- Constraints for table `manga`
+-- Ketidakleluasaan untuk tabel `genre`
 --
-ALTER TABLE `manga`
-  ADD CONSTRAINT `fk_genre` FOREIGN KEY (`id_genre`) REFERENCES `genre` (`id_genre`);
+ALTER TABLE `genre`
+  ADD CONSTRAINT `FK_MANGA` FOREIGN KEY (`id_manga`) REFERENCES `manga` (`id_manga`);
+
+--
+-- Ketidakleluasaan untuk tabel `mylist`
+--
+ALTER TABLE `mylist`
+  ADD CONSTRAINT `FK_EMAIL` FOREIGN KEY (`email`) REFERENCES `account` (`email`),
+  ADD CONSTRAINT `FK_MANGALIS` FOREIGN KEY (`id_manga`) REFERENCES `manga` (`id_manga`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
