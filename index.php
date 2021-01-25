@@ -64,7 +64,7 @@
                                 <li><a href="#" class="search-switch"><span class="icon_search"></span></a></li>
                                 <li><a href="#"><span class="icon_profile arrow_carrot-down"></span></a>
                                     <ul class="dropdown">
-                                        <li><a href="./categories.html">Mylist</a></li>
+                                        <li><a href="./mylist.php">Mylist</a></li>
                                         <?php include 'log_bottom.php'; ?>
                                     </ul>
                                 </li>
